@@ -1,0 +1,66 @@
+.filter {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+	position: fixed;
+	bottom: 0; /* Закрепить фильтр внизу страницы */
+	left: 0;
+	right: 0;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-bottom: 30px;
+}
+.filter h1,
+.filter h2 {
+	color: #d9d9d9;
+}
+.filter-icon {
+	width: 24px;
+	height: 24px;
+}
+
+.filter-button, .filter-button-active {
+	height: min-content;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+.filter-button-active {
+    /* color: white; */
+    border: 1px solid transparent;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05); /* Немного увеличиваем кнопку при активации */
+	transition: background-color 0.3s, transform 0.3s; /* Плавный переход */
+	background: linear-gradient(#1e1d1c, #1e1d1c) padding-box,
+	linear-gradient(45deg, #FF65F5, #FFA68F, #FF7575) border-box;
+	border-radius: 100px;
+	
+}
+
+.filter-button p, .filter-button-active p {
+	
+	margin: 0px;
+	height: min-content;
+
+}
+
+.filter-button-active p {
+	background: linear-gradient(45deg, #FF65F5, #FFA68F, #FF7575);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+}
+
+.filter-button {
+color: rgba(239, 239, 239, 0.5);
+border: rgba(239, 239, 239, 0.3) 1px solid;
+border-radius: 100px;
+background-color: transparent;
+padding: 4px 8px 4px 8px;
+}
+
+.button-container {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+gap: 8px;
+}
